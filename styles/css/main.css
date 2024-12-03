@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Doto:wght@100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Geist+Mono:wght@100..900&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kode+Mono:wght@400..700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&family=Tiny5&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1990px;
+  margin: 0 auto;
+  padding: 80px 63px;
+  font-family: "Poppins";
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  color: rgb(217, 217, 217);
+  background: linear-gradient(to left, #131313, #4a4a4a);
+}
+
+.light {
+  background-color: rgb(68, 68, 68) !important;
+  color: rgb(217, 217, 217) !important;
+}
+
+.moon {
+  color: rgb(68, 68, 68);
+  background: linear-gradient(to left, #a09f9f, rgba(70, 97, 115, 0)) !important;
+}
+.moon .data {
+  box-shadow: 8px 6px 10px gray;
+  background-color: #d9d9d9;
+}
+.moon .today-weather {
+  box-shadow: 8px 6px 10px gray;
+  background-color: #d9d9d9;
+}
+.moon .footer-first-box {
+  box-shadow: 8px 6px 10px gray;
+  height: 400px !important;
+  background-color: #d9d9d9;
+}
+.moon .footer-second-box {
+  background-color: #d9d9d9 !important;
+  border-radius: 30px;
+  box-shadow: 8px 6px 10px gray;
+  height: 400px !important;
+  transition: all 0.4s;
+}
+.moon .footer-second-box:hover {
+  transform: scale(1.03);
+}
+.moon .footer-second-box:active {
+  transform: scale(0.95);
+}
+.moon .dark-mode-title {
+  color: rgb(68, 68, 68) !important;
+}
+
+.sunny-hour {
+  background-color: rgb(232, 199, 164) !important;
+  color: rgb(68, 68, 68);
+}
+
+.dark-hour {
+  background-color: rgb(68, 61, 100) !important;
+  color: rgb(217, 217, 217);
+}
+
+.box-shadow-dark {
+  filter: drop-shadow(10px 10px 6px gray);
+}
+
+img {
+  filter: drop-shadow(6px 8px 20px rgb(217, 217, 217));
+}
+
+.gradus-moon {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), gray) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+header .dark-moon-box .dark-moon-button {
+  background-color: lightgray;
+  width: 80px;
+  height: 36px;
+  position: relative;
+  border-radius: 20px;
+  border: none;
+  padding-left: 4px;
+}
+header .dark-moon-box .dark-moon-button .black-white {
+  background-color: darkgray;
+  position: absolute;
+  bottom: 4px;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+}
+header .dark-moon-box .dark-moon-button .black-white-right {
+  right: 4px !important;
+}
+header .dark-moon-box .dark-mode-title {
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 27px;
+  text-align: left;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+header form {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+  border-radius: 15px;
+  min-width: 800px;
+  justify-content: center;
+}
+header form input {
+  border: none;
+  width: 350px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  background-color: transparent;
+  color: gray;
+}
+header form input:focus {
+  border: 1px solid transparent;
+  outline: none;
+}
+header .location {
+  padding: 14px 25px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(76, 187, 23);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 1px 1px 50px black;
+}
+
+.hover {
+  transition: all 0.4s;
+}
+.hover:hover {
+  transform: scale(1.05);
+}
+.hover:hover img {
+  transform: scale(1.03);
+}
+.hover:active {
+  transform: scale(0.95);
+}
+.hover:active img {
+  transform: scale(1.1);
+}
+.hover:active p {
+  transform: scale(1.03);
+}
+
+main {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+main .data {
+  width: 510px;
+  height: 350px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .athens {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: left;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+main .newdata {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 144px;
+  text-align: left;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+main .newdata-full {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+main .today-weather {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
+  border-radius: 15px;
+  width: 780px;
+  height: 350px;
+  box-shadow: 10px 10px 15px black;
+  padding: 15px 25px;
+}
+main .today-weather img {
+  width: 50px;
+  height: 50px;
+}
+main .first-today-box {
+  display: flex;
+  flex-direction: column;
+}
+main .gradus-box {
+  margin-bottom: 40px;
+}
+main .gradus-box .gradus {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 120px;
+  text-align: left;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .gradus-box .feels {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+main .gradus-box .feels-gradus {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+main .senrice {
+  display: flex;
+}
+main .senrice .senrice-title-box {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+main .second-today-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .second-today-box img {
+  width: 230px;
+  height: 230px;
+}
+main .today-sunny {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+main .third-container {
+  display: flex;
+  justify-content: space-between;
+}
+main .third-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+main .third-items img {
+  margin-top: 15px;
+  margin-bottom: 9px;
+  width: 60px;
+  height: 60px;
+}
+main .humidlity {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer .footer-first-box {
+  width: 414px;
+  height: 370px;
+  box-shadow: 5px 10px 10px black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer-first-box img {
+  width: 60px;
+  height: 60px;
+}
+.footer .footer-first-box .how-days {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.footer .footer-first-box .days-item {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  justify-content: space-between;
+}
+.footer .footer-first-box .days-item .days-degry {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.footer .footer-first-box .days-item .days-data {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.footer .footer-second-box {
+  width: 870px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #2b2b2b;
+  border-radius: 30px;
+  box-shadow: 6px 8px 10px black;
+}
+.footer .footer-second-box .footer-second-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.footer .footer-second-box .hours-container {
+  display: flex;
+  gap: 15px;
+}
+.footer .footer-second-box .hours-container .hours-box {
+  margin-top: 20px;
+  background-color: rgb(55, 54, 54);
+  padding: 13px 34px;
+  border-radius: 50px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer-second-box .hours-container .hours-box img {
+  width: 80px;
+  height: 80px;
+}
+.footer .footer-second-box .hours-container .hours-box .hour-hour {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.footer .footer-second-box .hours-container .hours-box .shomol {
+  width: 55px;
+  height: 55px;
+}
+.footer .footer-second-box .hours-container .hours-box .hour-degry {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.footer .footer-second-box .hours-container .hours-box .hour-kms {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}/*# sourceMappingURL=main.css.map */
